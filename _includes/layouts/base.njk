@@ -41,14 +41,14 @@
 
 		<header>
 
-			<p><img src="../img/logo.png" alt ="Random Thoughts Logo" width="250" height="125"></p>
+			<p><img src="../img/logo.png" class="img-thumbnail" alt ="Random Thoughts Logo" width="250" height="125"></p>
 
 			<a href="/" class="home-link">{{ metadata.title }}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav justify-content-center">
+				<ul class="nav">
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
