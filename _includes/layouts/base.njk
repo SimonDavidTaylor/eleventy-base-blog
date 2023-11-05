@@ -32,6 +32,8 @@
 		<style>{% getBundle "css" %}</style>
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
 	
 <body>
@@ -39,9 +41,9 @@
 
 		<header>
 
-			<p><img src="../img/logo.png" alt ="Random Thoughts Logo" width="250" height="125"></p>
+			<p><img src="../img/logo.png" class="img-thumbnail float-start" alt ="Random Thoughts Logo" width="250" height="125"></p>
 
-			<a href="/" class="home-link">{{ metadata.title }}</a>
+			<a href="/" class="home-link h3">{{ metadata.title }}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
@@ -58,8 +60,26 @@
 			{{ content | safe }}
 		</main>
 
-		<footer></footer>
+		<footer>
+			<div class="container text-center">
+				<div id="carouselFooter" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+    				<div class="carousel-item active">
+      				Random Thoughts Blog written by Simon Taylor
+    				</div>
+    				<div class="carousel-item">
+      				Written as part of Skills Bootcamp in Web Design & Development
+    				</div>
+ 		   			<div class="carousel-item">
+							Course Run by The Coding Guild
+  			  	</div>
+ 				 	</div>
+				</div>
+			</div>
+		</footer>
 
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	</body>
 </html>
