@@ -6,15 +6,15 @@ eleventyNavigation:
 ---
 <h1>Message Me</h1>
 
-<form>
+<form name="message method="POST" data-netlify="true">
   <label for="fname">First Name:</label>
   <input type="text" id="fname" name="fname" required><br>
   <label for="lname">Last Name:</label>
   <input type="text" id="lname" name="lname" required><br>
 	<label for="email">Email Address:</label>
 	<input type="email id="email" name="email" required><br>
-	<label for="message">Your Message:</label><br>
-	<textarea id="message" name="message" rows="4" cols="50" required>Enter your message here...</textarea><br>
+	<label for="message text">Your Message:</label><br>
+	<textarea id="message text" name="message text" rows="4" cols="50" required>Enter your message here...</textarea><br>
 	<input type="checkbox" id="termsAccepted" name="termsAccepted" value="Yes" required>
   <label for="termsAccepted"> I have accepted the Terms and Conditions</label><br>
   <input type="submit" value="Submit">
