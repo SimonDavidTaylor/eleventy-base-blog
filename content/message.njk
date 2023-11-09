@@ -7,25 +7,27 @@ eleventyNavigation:
 <h1>Message Me</h1>
 
 <form name="message method="POST" data-netlify="true">
-  	<label for="fname" class="form-label>First Name:</label>
-  	<input type="text" id="fname" name="fname" class="form-control" required><br>
+	<div class="mb-3">	  
+		<label for="fname">First Name:</label>
+  	<input type="text" id="fname" name="fname" required><br>
+	</div>	
 	<div class="mb-3">
   	<label for="lname">Last Name:</label>
   	<input type="text" id="lname" name="lname" required><br>
 	</div>
 	<div class="mb-3">
-		<label for="email" class="form-label>Email Address:</label>
-		<input type="email id="email" name="email" class="form-control" required><br>
+		<label for="email">Email Address:</label>
+		<input type="email id="email" name="email" required><br>
 	</div>
 	<div class="mb-3">
-		<label for="message text" class="form-label>Your Message:</label><br>
-		<textarea id="message text" name="message text" rows="4" cols="50" class="form-control" required>Enter your message here...</textarea><br>
+		<label for="message text">Your Message:</label><br>
+		<textarea id="message text" name="message text" rows="4" cols="50" required>Enter your message here...</textarea><br>
 	</div>
 	<div class="mb-3">
-		<input type="checkbox" id="termsAccepted" name="termsAccepted" value="Yes" class="form-control" required>
-  	<label for="termsAccepted" class="form-label> I have accepted the Terms and Conditions</label><br>
+		<input type="checkbox" id="termsAccepted" name="termsAccepted" value="Yes" required>
+  	<label for="termsAccepted"> I have accepted the Terms and Conditions</label><br>
 	</div>
 	<div class="mb-3">
-  	<input type="submit" value="Submit" class="form-control">
+  	<input type="submit" value="Submit">
 	</div>
 </form>
