@@ -16,3 +16,66 @@ function calculatePercentage (number, percentage) {<br>
   return result;<br>
 }
 </code>
+
+<h3>Switch Statement</h3>
+<code>
+	function drinkOrder (size, buttonName) {<br>
+  
+  var size;<br>
+  var buttonName;<br>
+  var drinkName;<br>
+  var orderText;<br>
+  
+  switch (buttonName) {<br>
+    case "cola":<br>
+      drinkName = "Cola";<br>
+      break;<br>
+    case "lemon":<br>
+      drinkName = "Lemonade";<br>
+      break;<br>
+    case "orange":<br>
+      drinkName = "Orangeade";<br>
+      break;<br>
+  }<br>
+  
+  orderText = `You have ordered a ${size} ${drinkName}.`;<br>
+  
+  return orderText;<br>
+  
+}
+</code>
+
+<h3>Calculator</h3>
+<code>
+
+ function calculator (firstNumber, secondNumber, operator) {<br>
+  var firstNumber;<br>
+  var secondNumber;<br>
+  var operator;<br>
+  let resultNumber;<br>
+  
+  switch (operator) {<br>
+    case "+":<br>
+      resultNumber = firstNumber + secondNumber;<br>
+      break;<br>
+    case "-":<br>
+      resultNumber = firstNumber - secondNumber;<br>
+      break;<br>
+    case "*":<br>
+      resultNumber = firstNumber * secondNumber;<br>
+      break;<br>
+    case "/":<br>
+      resultNumber = firstNumber / secondNumber;<br>
+      break;<br>
+    case "%":<br>
+      resultNumber = firstNumber % secondNumber;<br>
+      break;<br>
+    default:<br>
+      resultNumber = "Undefined";<br>
+      break;<br>
+  }<br>
+  
+  return resultNumber;<br>
+  
+}
+</code>
