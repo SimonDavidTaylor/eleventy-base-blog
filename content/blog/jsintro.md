@@ -7,12 +7,12 @@ draft: false
 
 <h3>Percentage Calculator</h3>
 <code>
-function calculatePercentage (number, percentage) {
-  var number;
-  var percentage;
-  var result;
+function calculatePercentage (number, percentage) {<br>
+  var number;<br>
+  var percentage;<br>
+  var result;<br>
   
-  result = number * percentage / 100;
-  return result;
+  result = number * percentage / 100;<br>
+  return result;<br>
 }
 </code>
