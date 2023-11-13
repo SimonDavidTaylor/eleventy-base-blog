@@ -5,7 +5,8 @@ draft: false
 ---
 <a href="https://codepen.io/SimonDTaylor/pen/yLGdNKv" target="_blank">Here's</a> a link to my CodePen for the JavaScript below.
 
-<h2>Percentage Calculator</h2>
+<h3>Percentage Calculator</h3>
+<code>
 function calculatePercentage (number, percentage) {
   var number;
   var percentage;
@@ -14,3 +15,4 @@ function calculatePercentage (number, percentage) {
   result = number * percentage / 100;
   return result;
 }
+</code>
